@@ -54,8 +54,8 @@
 </template>
 <style scoped>
 .about {
-  padding: 0 13%;
-  margin-top: 20%;
+  padding: 13%;
+  margin-top: 15%;
 }
 .section_header {
   color: rgb(215, 238, 247);
