@@ -2,9 +2,9 @@
     <div class="mx-4 hero mx-md-0">
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">
-            <p class="p-0 m-0 header">Hi, This is <span class="devspan">Shaimaa</span></p>
-            <p class="p-0 m-0 header2">A passionate software engineer</p>
-            <p class="subheader">You have the vision for a game changing digital experience. I bring it to reality!</p>
+            <p class="p-0 m-0 text-white display-6 fw-bold">Hi, my name is</p>
+            <p class="p-0 m-0 display-3 fw-bold devspan">Shaimaa Hossam</p>
+            <p class="p-0 m-0 display-6 header2">I'm a Software Engineer at your service</p>
             <div class="mt-5 connect">
                 <a class="connect-btn" href="">Browse my projects</a>
             </div>
@@ -26,7 +26,7 @@
 
 .connect-btn{
     background: rgb(32, 157, 206);
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
     font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
