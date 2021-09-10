@@ -1,5 +1,5 @@
 <template>
-    <div class="top-0 py-5 w-100 dropdown position-absolute position-fixed">
+    <div class="top-0 w-100 dropdown position-absolute position-fixed">
       <ul class="list">
         <a href="#about"><li>About me</li></a>
         <a href=""><li>Projects</li></a>
@@ -26,7 +26,9 @@ export default {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   transition: 0.3s;
-  box-shadow:  10px 5px 20px rgb(25, 81, 128);
+  height: 450px;
+  padding-top: 30%;
+  box-shadow:  10px 5px 40px rgb(25, 81, 128);
 }
 .list {
   margin: 0;
@@ -45,7 +47,8 @@ export default {
   cursor: pointer;
 }
 a li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 
 </style>
