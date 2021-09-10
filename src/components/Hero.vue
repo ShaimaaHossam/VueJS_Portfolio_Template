@@ -1,5 +1,10 @@
 <template>
-    <div data-aos="fade-down" class="mx-4 hero mx-md-0">
+    <div data-aos="zoom-in-down"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center" class="mx-4 hero mx-md-0" >
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">
             <p class="p-0 m-0 text-white display-6 fw-bold">Hi, my name is</p>
@@ -13,6 +18,16 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+  computed: {
+    isMenu() {
+      return this.$store.state.toggleMenu;
+    },
+  },
+  methods: {},
+};
+</script>
 <style scoped>
 .hero{
     padding:5%;
@@ -23,7 +38,9 @@
 .devspan{
     color:rgb(32, 157, 206);
 }
-
+.blur{
+    opacity: 0.2;
+}
 .connect-btn{
     background: rgb(32, 157, 206);
     color: hsl(0, 0%, 100%);

@@ -1,5 +1,10 @@
 <template>
-  <div data-aos="fade-down" id="about" class="mx-0 hero about">
+  <div data-aos="zoom-in-down"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center" id="about" class="mx-0 hero about">
     <div
       class="d-flex justify-content-between align-content-center flex-column"
     >

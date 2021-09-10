@@ -26,6 +26,7 @@ export default {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   transition: 0.3s;
+  box-shadow:  10px 5px 20px rgb(25, 81, 128);
 }
 .list {
   margin: 0;

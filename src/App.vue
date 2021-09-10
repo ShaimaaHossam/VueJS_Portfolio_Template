@@ -7,8 +7,8 @@
         <Dropdown class="d-md-none" v-if="isMenu"/>
       </transition>
       
-      <Hero :class="isMenu ? 'blur' : ''"/>
-      <About :class="isMenu ? 'blur' : ''"/>
+      <Hero />
+      <About />
   </div>
 </template>
 
@@ -59,7 +59,7 @@ export default {
   height: 100%;;
 }
 .blur{
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
