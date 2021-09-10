@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-aos="fade-left">
       <div
       class="bottom-0 d-none d-lg-block ms-5 position-fixed socials position-absolute start-0"
     >

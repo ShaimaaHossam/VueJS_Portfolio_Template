@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="mx-0 hero about">
+  <div data-aos="fade-down" id="about" class="mx-0 hero about">
     <div
       class="d-flex justify-content-between align-content-center flex-column"
     >
@@ -49,8 +49,8 @@
 </template>
 <style scoped>
 .about {
-  padding: 10%;
-  margin-top: 10%;
+  padding: 0 13%;
+  margin-top: 20%;
 }
 .section_header {
   color: rgb(215, 238, 247);
@@ -73,4 +73,5 @@ div img{
   border:1px solid transparent;
   border-radius: 20px;
 }
+
 </style>

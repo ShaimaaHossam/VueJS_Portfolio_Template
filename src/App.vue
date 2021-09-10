@@ -3,8 +3,12 @@
     <LeftSide />
     <RightSide />
       <Navbar />
-      <Hero />
-      <About />
+      <transition name="fade">
+        <Dropdown class="d-md-none" v-if="isMenu"/>
+      </transition>
+      
+      <Hero :class="isMenu ? 'blur' : ''"/>
+      <About :class="isMenu ? 'blur' : ''"/>
   </div>
 </template>
 
@@ -14,16 +18,26 @@ import Hero from "./components/Hero.vue";
 import LeftSide from "./components/LeftSide.vue";
 import RightSide from "./components/RightSide.vue";
 import About from "./components/aboutme.vue";
+import Dropdown from "./components/Dropdown.vue";
 export default {
   name: "App",
   components: {
     Navbar,
+    Dropdown,
     Hero,
     About,
     LeftSide,
     RightSide
   },
-};
+  computed: {
+    isMenu(){
+      return this.$store.state.toggleMenu;
+    }
+  }, 
+  methods: {
+      
+  }
+  }
 </script>
 
 <style>
@@ -43,6 +57,15 @@ export default {
   color: #2c3e50;
   scrollbar-width: 50px;
   height: 100%;;
+}
+.blur{
+  opacity: 0.3;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 .header{
     margin-top: 0;

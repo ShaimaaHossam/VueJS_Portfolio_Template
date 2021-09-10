@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-4 hero mx-md-0">
+    <div data-aos="fade-down" class="mx-4 hero mx-md-0">
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">
             <p class="p-0 m-0 text-white display-6 fw-bold">Hi, my name is</p>
