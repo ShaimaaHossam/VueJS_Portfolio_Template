@@ -2,8 +2,9 @@
     <div class="top-0 w-100 dropdown position-absolute position-fixed">
       <ul class="list">
         <a href="#about"><li>About me</li></a>
-        <a href=""><li>Projects</li></a>
+        <a href="#projects"><li>Projects</li></a>
         <a href=""><li>Skills</li></a>
+        <a href=""><li>Contact</li></a>
       </ul>
     </div>
 </template>
