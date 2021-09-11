@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
         <div class="img-container p-0 col-lg-6">
           <img class="w-100 h-100" src="../assets/Hagarts.png" alt="" />
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="container mt-5 mt-lg-0 mx-auto">
+    <div class="container mt-5 mb-5 mt-lg-0 mx-auto">
       <div class="row">
         <div class="img-container p-0 col-lg-6 order-lg-2">
           <img class="w-100 h-100" src="../assets/Edufy.png" alt="" />
