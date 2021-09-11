@@ -43,7 +43,7 @@
                 </div>
               </div>
             </div>
-            <div class="mx-auto mt-5 col-lg-4 col-sm-6">
+            <div class="mx-auto mt-5 mt-lg-0 col-lg-4 col-sm-6 img_container">
               <img class="w-100 h-100" src="../assets/1.png" alt="" />
             </div>
           </div>
@@ -72,11 +72,24 @@
 }
 .about_par {
   color: rgb(153, 174, 199);
+  font-size: 1.13rem;
 }
 
 div img{
+  object-fit: cover;
+  opacity: 0.7;
   border:1px solid transparent;
   border-radius: 20px;
 }
-
+.img_container{
+  background: rgb(188, 132, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(188, 132, 241, 1) 0%,
+    rgba(3, 26, 42, 1) 0%,
+    rgba(8, 16, 60, 1) 100%
+  );
+  border:1px solid transparent;
+  border-radius: 20px;
+}
 </style>
