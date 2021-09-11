@@ -98,9 +98,7 @@
           <p class="project_subtitle">Web Project</p>
 
           <p class="desc text-start">
-            A portfolio website built for an artist to display and sell her work
-            to her clients professionaly. <br />The admin is provided a fully
-            functional admin panel to organize the content of the website.
+             This website is a user-friendly platform where the companies can display their residential or commercial properties.
           </p>
           <ul class="tools d-flex devspan justify-content-evenly ">
             <li>Laravel</li>
