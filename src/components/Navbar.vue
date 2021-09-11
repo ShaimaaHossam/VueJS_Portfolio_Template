@@ -17,8 +17,8 @@
       >
         <a class="me-4" href="#about"><li>About me</li></a>
         <a class="me-4" href="#projects"><li>Projects</li></a>
-        <a href=""><li>Skills</li></a>
-        <a href=""><li>Contact</li></a>
+        <a class="me-4" href=""><li>Skills</li></a>
+        <a class="me-4" href=""><li>Contact</li></a>
       </ul>
       <a class="btn-contact me-4 ">Resume</a>
     </div>
