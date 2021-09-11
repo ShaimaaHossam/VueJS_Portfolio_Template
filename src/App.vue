@@ -9,6 +9,7 @@
       
       <Hero />
       <About />
+      <Projects />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import LeftSide from "./components/LeftSide.vue";
 import RightSide from "./components/RightSide.vue";
 import About from "./components/aboutme.vue";
 import Dropdown from "./components/Dropdown.vue";
+import Projects from "./components/Projects.vue";
 export default {
   name: "App",
   components: {
@@ -26,6 +28,7 @@ export default {
     Dropdown,
     Hero,
     About,
+    Projects,
     LeftSide,
     RightSide
   },
@@ -67,6 +70,9 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+.devspan {
+  color: rgb(32, 157, 206);
+}
 .header{
     margin-top: 0;
     margin-bottom: 0;
@@ -74,6 +80,9 @@ export default {
     font-weight: bold;
     color:white;
     z-index:6;
+}
+a:hover{
+  cursor: pointer;
 }
 .header2{
     color: rgb(196, 199, 207);

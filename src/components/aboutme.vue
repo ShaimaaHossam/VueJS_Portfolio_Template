@@ -66,15 +66,14 @@
   width: 50px;
 }
 
-.devspan,
-.icon {
-  color: rgb(32, 157, 206);
-}
+
 .about_par {
   color: rgb(153, 174, 199);
   font-size: 1.13rem;
 }
-
+.icon {
+  color: rgb(32, 157, 206);
+}
 div img{
   object-fit: cover;
   opacity: 0.7;
@@ -82,13 +81,8 @@ div img{
   border-radius: 20px;
 }
 .img_container{
-  background: rgb(188, 132, 241);
-  background: linear-gradient(
-    90deg,
-    rgba(188, 132, 241, 1) 0%,
-    rgba(3, 26, 42, 1) 0%,
-    rgba(8, 16, 60, 1) 100%
-  );
+  background: rgb(13, 8, 29);
+  padding:0;
   border:1px solid transparent;
   border-radius: 20px;
 }

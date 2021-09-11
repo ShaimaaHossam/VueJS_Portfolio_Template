@@ -5,7 +5,10 @@
   </div>
 </template>
 <style scoped>
-
+.right_side{
+  padding: 0 ;
+  right: 0;
+}
 .email {
   transform: rotate(90deg);
   color: white;
