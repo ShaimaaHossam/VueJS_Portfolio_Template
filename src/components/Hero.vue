@@ -3,7 +3,7 @@
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
-    data-aos-once="false"
+    data-aos-once="true"
     data-aos-anchor-placement="top-center" class="mx-4 hero mx-md-0" >
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">

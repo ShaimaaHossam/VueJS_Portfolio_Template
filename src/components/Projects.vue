@@ -1,26 +1,48 @@
 <template>
-  <div data-aos="zoom-in-down"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center" class="projects">
-    <div id="projects" class="section_header text-start d-flex">
+  <div class="projects">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-mirror="true"
+      data-aos-once="true"
+      data-aos-anchor-placement="top-center"
+      id="projects"
+      class="section_header text-start d-flex"
+    >
       <div class="section_header">
         <p class="header">My latest projects</p>
         <div class="hline"></div>
       </div>
       <div class="icon_big ms-3">
-        <a href="https://github.com/ShaimaaHossam" target="_blank"><fa :icon="['fab', 'github']" /></a>
+        <a href="https://github.com/ShaimaaHossam" target="_blank"
+          ><fa :icon="['fab', 'github']"
+        /></a>
       </div>
     </div>
 
     <div class="container mb-5">
       <div class="row">
-        <div class="img-container p-0 col-lg-6">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="img-container p-0 col-lg-6"
+        >
           <img class="w-100 h-100" src="../assets/Hagarts.png" alt="" />
         </div>
-        <div class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto"
+        >
           <div class="d-flex justify-content-center justify-content-lg-end">
             <p class="project_title me-2">Hagarts</p>
             <div class="icons align-self-center">
@@ -51,10 +73,26 @@
 
     <div class="container mt-5 mb-5 mt-lg-0 mx-auto">
       <div class="row">
-        <div class="img-container p-0 col-lg-6 order-lg-2">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="img-container p-0 col-lg-6 order-lg-2"
+        >
           <img class="w-100 h-100" src="../assets/Edufy.png" alt="" />
         </div>
-        <div class="text col-lg-6 text-center text-lg-start mt-4 my-lg-auto">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="text col-lg-6 text-center text-lg-start mt-4 my-lg-auto"
+        >
           <div class="d-flex justify-content-center justify-content-lg-start">
             <p class="project_title me-2">Edufy</p>
             <div class="icons align-self-center mt-1">
@@ -66,7 +104,8 @@
           <p class="project_subtitle">Web Project</p>
           <p class="desc text-start">
             An online learning platform where course creators can organize their
-            content. (A <span class="devspan">Udemy</span> clone with a few touches)
+            content. (A <span class="devspan">Udemy</span> clone with a few
+            touches)
           </p>
           <ul class="tools d-flex devspan justify-content-evenly ">
             <li>Vue</li>
@@ -76,16 +115,31 @@
             <li>SQL</li>
           </ul>
         </div>
-        
       </div>
     </div>
 
     <div class="container mt-5 mt-lg-0">
       <div class="row">
-        <div class="img-container p-0 col-lg-6">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="img-container p-0 col-lg-6"
+        >
           <img class="w-100 h-100" src="../assets/Inspect.png" alt="" />
         </div>
-        <div class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto"
+        >
           <div class="d-flex justify-content-center justify-content-lg-end">
             <p class="project_title me-2">Inspect</p>
             <div class="icons align-self-center">
@@ -98,14 +152,14 @@
           <p class="project_subtitle">Web Project</p>
 
           <p class="desc text-start">
-             This website is a user-friendly platform where the companies can display their residential or commercial properties.
+            This website is a user-friendly platform where the companies can
+            display their residential or commercial properties.
           </p>
           <ul class="tools d-flex devspan justify-content-evenly ">
             <li>Laravel</li>
             <li>SQL</li>
             <li>Tailwind</li>
             <li>Javascript</li>
-            
           </ul>
         </div>
       </div>
@@ -153,7 +207,7 @@
   color: rgb(153, 174, 199);
   margin: 0;
 }
-.icon_big{
+.icon_big {
   font-size: 35px;
 }
 .icon:hover {
