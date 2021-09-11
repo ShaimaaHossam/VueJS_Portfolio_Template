@@ -12,7 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { store } from './store/store.js';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import VueScrollFixedNavbar from "vue-scroll-fixed-navbar";
 
+Vue.use(VueScrollFixedNavbar);
 library.add(fas, fab, far)
 
 AOS.init();

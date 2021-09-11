@@ -28,7 +28,7 @@ export default {
   transition: 0.3s;
   height: 450px;
   padding-top: 30%;
-  box-shadow:  10px 5px 40px rgb(25, 81, 128);
+  box-shadow:  2px 2px 40px rgb(4, 20, 36);
 }
 .list {
   margin: 0;
