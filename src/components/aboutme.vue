@@ -4,7 +4,7 @@
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="true"
-    data-aos-anchor-placement="top-center" id="about" class="mx-0 hero about">
+    data-aos-anchor-placement="top-center" id="about" class="mx-0 ms-lg-5 hero about">
     <div
       class="d-flex justify-content-between align-content-center flex-column"
     >
@@ -79,6 +79,10 @@ div img{
   opacity: 0.7;
   border:1px solid transparent;
   border-radius: 20px;
+}
+div img:hover{
+  opacity:1;
+  transition: 0.3s;
 }
 .img_container{
   background: rgb(13, 8, 29);

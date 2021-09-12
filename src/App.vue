@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <LeftSide />
-    <RightSide />
       <Navbar />
       <transition name="fade">
         <Dropdown class="d-md-none" v-if="isMenu"/>
@@ -10,6 +9,7 @@
       <Hero />
       <About />
       <Projects />
+      <Skills />
   </div>
 </template>
 
@@ -17,10 +17,10 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import LeftSide from "./components/LeftSide.vue";
-import RightSide from "./components/RightSide.vue";
 import About from "./components/aboutme.vue";
 import Dropdown from "./components/Dropdown.vue";
 import Projects from "./components/Projects.vue";
+import Skills from "./components/Skills.vue";
 export default {
   name: "App",
   components: {
@@ -29,8 +29,8 @@ export default {
     Hero,
     About,
     Projects,
+    Skills,
     LeftSide,
-    RightSide
   },
   computed: {
     isMenu(){

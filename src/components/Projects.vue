@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects ms-lg-5">
     <div
       data-aos="zoom-in-down"
       data-aos-delay="50"
@@ -194,6 +194,7 @@
   opacity: 0.25;
   transition: 0.5s;
   border: 1px solid transparent;
+  transition:0.3s;
   border-radius: 10px;
 }
 .img-container:hover img {

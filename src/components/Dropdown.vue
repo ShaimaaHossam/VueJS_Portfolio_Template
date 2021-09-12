@@ -3,7 +3,7 @@
       <ul class="list">
         <a href="#about"><li>About me</li></a>
         <a href="#projects"><li>Projects</li></a>
-        <a href=""><li>Skills</li></a>
+        <a href="#skills"><li>Skills</li></a>
         <a href=""><li>Contact</li></a>
       </ul>
     </div>

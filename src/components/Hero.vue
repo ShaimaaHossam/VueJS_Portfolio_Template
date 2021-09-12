@@ -4,7 +4,7 @@
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="true"
-    data-aos-anchor-placement="top-center" class="mx-4 hero mx-md-0" >
+    data-aos-anchor-placement="top-center" class="mx-4 ms-lg-5 hero mx-md-0" >
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">
             <p class="p-0 m-0 text-white display-6 fw-bold">Hi, my name is</p>
