@@ -18,10 +18,10 @@
             <div class="col-lg-7">
               <div class="about_par">
                 <p>
-                  <span class="devspan">Shaimaa Hossam</span><br>
-                  A computer engineering undergraduate at Arab Academy for
-                  Science and Technology with fundamental knowledge of software design and development.
-                </p>
+                  <span class="devspan fw-bold">Shaimaa Hossam</span><br>
+                  A computer engineering undergraduate with fundamental knowledge of software design and development.<br><br> 
+                   Likes to code things from scratch and turn ideas into real life digital experiences while maintaining a simple, clean, and organized content structure.
+                </p>  Passionate about self-development and always looking for the next thing to learn.<br>
                 <br />
                 <p class="text-white fw-bold">Interests</p>
                 <div class=" d-flex">
@@ -38,7 +38,7 @@
                 </div>
               </div>
             </div>
-            <div class="mx-auto mt-5 mt-lg-0 col-lg-4 col-sm-6 img_container">
+            <div class="mx-auto mt-5 mt-lg-0 col-lg-5 col-sm-6 img_container">
               <img class="w-100 h-100" src="../assets/1.png" alt="" />
             </div>
           </div>

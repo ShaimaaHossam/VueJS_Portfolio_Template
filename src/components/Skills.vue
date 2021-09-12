@@ -45,10 +45,10 @@
               <p class="text-start fw-bold skill">Programming Languages</p>
             </div>
             <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Javascript (ES6)</p>
+              <p class="devspan item">Javascript</p>
               <p class="devspan item">Typescript</p>
               <p class="devspan item">HTML</p>
-              <p class="devspan item">CSS/Sass</p>
+              <p class="devspan item">CSS</p>
             </div>
             <div class="d-flex mt-2">
               <fa icon="caret-right" class="devspan mt-1 me-1" />

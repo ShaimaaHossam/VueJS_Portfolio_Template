@@ -8,7 +8,7 @@
         <div class="d-flex justify-content-center align-content-center flex-column">
             <div class="mx-auto my-auto text-start text">
             <p class="p-0 m-0 text-white display-6 fw-bold">Hi, my name is</p>
-            <p class="p-0 m-0 display-2 fw-bold devspan">Shaimaa Hossam</p>
+            <p class="p-0 m-0 display-2 fw-bold devspan">Shaimaa Hossam.</p>
             <p class="p-0 m-0 display-4 fw-bold header2">I'm a Software Engineer at your service</p>
             <div class="mt-5 connect">
                 <a class="connect-btn" href="#projects">Browse my projects</a>
