@@ -6,7 +6,8 @@
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center" class="head">
-      <p class="header">My Skills</p>
+      <p class="header text-start">My Skills</p>
+      <div class="hline"></div>
     </div>
 
     <div class="container ms-lg-5">
