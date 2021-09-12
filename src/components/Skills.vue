@@ -5,7 +5,7 @@
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="true"
-    data-aos-anchor-placement="top-center" class="head">
+    data-aos-anchor-placement="top-center" class="head mx-auto ms-5">
       <p class="header text-start">My Skills</p>
       <div class="hline"></div>
     </div>

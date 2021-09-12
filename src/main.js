@@ -13,6 +13,12 @@ import { store } from './store/store.js';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import VueScrollFixedNavbar from "vue-scroll-fixed-navbar";
+import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
+import {ValidationObserver} from 'vee-validate'
+import VueRecaptcha from 'vue-recaptcha';
+Vue.component('vue-recaptcha', VueRecaptcha)
+Vue.component('ValidationProvider', ValidationProvider)
+Vue.component('ValidationObserver', ValidationObserver)
 
 Vue.use(VueScrollFixedNavbar);
 library.add(fas, fab, far)

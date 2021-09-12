@@ -3,10 +3,12 @@
       <div
       class="bottom-0 d-none d-lg-block ms-5 position-fixed socials position-absolute start-0"
     >
+        <a target="_blank" href="mailto:shaimaahossam96@gmail.com"><fa class="mb-4 icons d-block" icon="at" /></a>
         <a target="_blank" href="https://linkedin.com/in/shaimaa-hossam-367362164/"><fa class="mb-4 icons d-block" :icon="['fab', 'linkedin']" /></a>
         <a target="_blank" href="https://www.github.com/ShaimaaHossam"><fa class="mb-4 icons d-block" :icon="['fab', 'github']" /></a>
         <a target="_blank" href="https://www.facebook.com/shaimaa.hossam98"><fa class="mb-4 icons d-block" :icon="['fab', 'facebook-square']" /></a>
         <a target="_blank" href="https://www.instagram.com/shaimaahossam98/"><fa class="mb-4 icons d-block" :icon="['fab', 'instagram']" /></a> 
+        
         <div class="vline ms-2 d-block"></div>
     </div>
     
