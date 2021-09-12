@@ -102,17 +102,7 @@
                 </div>
               </div>
             </div>
-            <div></div>
-            <vue-recaptcha
-              @verify="verifyMethod"
-              @expired="expiredMethod"
-              @render="renderMethod"
-              @error="errorMethod"
-              :loadRecaptchaScript="true"
-              class="rec"
-              sitekey="6Ld3YmAcAAAAAH2kgFLRQDuXN2JP5lIObfR6aw9r">
               <input type="submit" value="Send" class="connect-btn" />
-            </vue-recaptcha>
           </form>
         </ValidationObserver>
       </div>
@@ -158,7 +148,6 @@ init("user_qaP0oCjg4sd1ZFp1mw3bT");
 export default {
   methods: {
     sendEmail() {
-      console.log("HEREEEE");
       emailjs.sendForm("gmail", "template", "#contact-form").then(
         (result) => {
           console.log("SUCCESS!", result.status, result.text);
