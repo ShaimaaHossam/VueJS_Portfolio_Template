@@ -98,7 +98,6 @@ ul {
 .bar {
   color: rgb(32, 157, 206);
   font-size: 24px;
-  z-index: 11;
 }
 .bar:hover {
   cursor: pointer;
