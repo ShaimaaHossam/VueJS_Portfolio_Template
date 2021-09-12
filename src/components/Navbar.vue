@@ -20,7 +20,7 @@
         <a class="me-4" href="#skills"><li>Skills</li></a>
         <a class="me-4" href="#contact"><li>Contact</li></a>
       </ul>
-      <a class="btn-contact me-4 ">Resume</a>
+      <a :class="isMenu ? 'd-none' : 'd-block'" class="btn-contact me-4 ">Resume</a>
     </div>
   </VueScrollFixedNavbar>
 </template>
@@ -61,11 +61,15 @@ export default {
     onScroll() {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollPosition <= 0) {
-        document.getElementById("nav").classList.remove("navbar--shadow");
+      if (currentScrollPosition < 0) {
         return;
-      } // Stop executing this function if the difference between
-      // current scroll position and last scroll position is less than some offset
+      } 
+      if (currentScrollPosition == 0) {
+        document.getElementById("nav").classList.remove("navbar--shadow");
+      }
+      if (currentScrollPosition != 0) {
+        document.getElementById("nav").classList.add("navbar--shadow");
+      }
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
         return;
       }
@@ -87,6 +91,9 @@ export default {
 <style>
 ul {
   list-style: none;
+}
+.navbar{
+  z-index:100;
 }
 .bar {
   color: rgb(32, 157, 206);

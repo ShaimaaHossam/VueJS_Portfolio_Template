@@ -18,24 +18,19 @@
             <div class="col-lg-7">
               <div class="about_par">
                 <p>
-                  Welcome to my website!<br />
-                  I'm a Computer Engineering
-                  <span class="devspan">undergraduate</span> at Arab Academy for
-                  Science and Technology.
-                </p>
-                <p>
-                  I'm passionate about designing, coding, and building creative
-                  software projects.
+                  <span class="devspan">Shaimaa Hossam</span><br>
+                  A computer engineering undergraduate at Arab Academy for
+                  Science and Technology with fundamental knowledge of software design and development.
                 </p>
                 <br />
-                <p class="text-white fw-bold">Career interests</p>
+                <p class="text-white fw-bold">Interests</p>
                 <div class=" d-flex">
-                  <fa class="icon me-2" :icon="['far', 'star']" />
+                  <fa class="icon me-2 mb-0" :icon="['far', 'star']" />
                   <p>Full-stack software development</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex mt-0 mb-0">
                   <fa class="icon me-2" :icon="['far', 'star']" />
-                  <p>Deep Learning</p>
+                  <p>Artificial Intelligence</p>
                 </div>
                 <div class="d-flex">
                   <fa class="icon me-2" :icon="['far', 'star']" />
@@ -73,6 +68,7 @@
 }
 .icon {
   color: rgb(32, 157, 206);
+  font-size:18px;
 }
 div img{
   object-fit: cover;

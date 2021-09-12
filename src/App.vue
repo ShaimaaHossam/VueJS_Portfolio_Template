@@ -11,6 +11,7 @@
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import Dropdown from "./components/Dropdown.vue";
 import Projects from "./components/Projects.vue";
 import Skills from "./components/Skills.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
@@ -33,6 +35,7 @@ export default {
     Projects,
     Skills,
     Contact,
+    Footer,
     LeftSide,
   },
   computed: {
