@@ -37,8 +37,9 @@
 }
 .email{
    color: rgb(153, 174, 199);
+   font-size: 1rem;
 }
 .space{
-    letter-spacing: 5px;
+    letter-spacing: 0.15rem;
 }
 </style>
