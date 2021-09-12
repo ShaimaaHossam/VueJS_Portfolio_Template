@@ -20,7 +20,7 @@
         <a class="me-4" href="#skills"><li>Skills</li></a>
         <a class="me-4" href="#contact"><li>Contact</li></a>
       </ul>
-      <a :class="isMenu ? 'd-none' : 'd-block'" class="btn-contact me-4 ">Resume</a>
+      <a :class="isMenu ? 'd-none' : 'd-block'" href="/resume.pdf" class="btn-contact me-4 ">Resume</a>
     </div>
   </VueScrollFixedNavbar>
 </template>
