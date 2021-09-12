@@ -21,7 +21,7 @@
         data-aos-anchor-placement="top-center"
         class="subheader2"
       >
-        Please do not hesitate to reach out, I would love to hear from you!
+        Do not hesitate to reach out, I would love to hear from you!
       </p>
     </div>
 
