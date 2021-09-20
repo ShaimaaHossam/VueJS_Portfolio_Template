@@ -21,151 +21,76 @@
       </div>
     </div>
 
-    <div class="container mb-5">
+    <div
+      v-for="(project, index) in projects"
+      :key="project.id"
+      class="container mb-5"
+    >
       <div class="row">
         <div
-          data-aos="fade-right"
+          :data-aos="index % 2 == 0 ? 'fade-left' : 'fade-right'"
           data-aos-delay="10"
           data-aos-duration="1000"
           data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor-placement="top-center"
-          class="img-container p-0 col-lg-6"
+          class="p-0 img-container col-lg-6"
+          :class="index % 2 == 0 ? 'order-2' : ''"
         >
-          <img class="w-100 h-100" src="../assets/Hagarts.png" alt="" />
+          <img
+            class="w-100 h-100"
+            :src="require('../assets/' + project.image)"
+            alt=""
+          />
         </div>
         <div
-          data-aos="fade-left"
+          :data-aos="index % 2 == 0 ? 'fade-right' : 'fade-left'"
           data-aos-delay="10"
           data-aos-duration="1000"
           data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor-placement="top-center"
-          class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto"
+          class="mt-4 text-center text col-lg-6 my-lg-auto"
+          :class="index % 2 == 0 ? 'text-lg-start' : 'text-lg-start'"
         >
           <div class="d-flex justify-content-center justify-content-lg-end">
-            <p class="project_title me-2">Hagarts</p>
+            <p class="project_title me-2">{{ project.title }}</p>
             <div class="icons align-self-center">
-              <a target="_blank" href="https://hagarts.netlify.app"
-                ><fa class="icon" icon="external-link-alt"
+              <a target="_blank" :href="project.href"
+                ><fa class="icon" :icon="project.icon"
               /></a>
             </div>
           </div>
 
-          <p class="project_subtitle">Web Project</p>
+          <p class="project_subtitle">{{ project.subtitle }}</p>
 
-          <p class="desc text-start">
-            A portfolio website built for an artist to display and sell her work
-            to her clients professionaly. <br />The admin is provided a fully
-            functional admin panel to organize the content of the website.
-          </p>
-          <ul class="tools d-flex devspan justify-content-evenly ">
-            <li>Vue</li>
-            <li>Gridsome</li>
-            <li>CMS</li>
-            <li>Netlify</li>
-            <li>GraphQL</li>
-            <li>Tailwind</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5 mb-5 mt-lg-0 mx-auto">
-      <div class="row">
-        <div
-          data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          class="img-container p-0 col-lg-6 order-lg-2"
-        >
-          <img class="w-100 h-100" src="../assets/Edufy.png" alt="" />
-        </div>
-        <div
-          data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          class="text col-lg-6 text-center text-lg-start mt-4 my-lg-auto"
-        >
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <p class="project_title me-2">Edufy</p>
-            <div class="icons align-self-center mt-1">
-              <a target="_blank" href="https://www.github.com/khaledtag98/edufy"
-                ><fa class="icon" :icon="['fab', 'github']"
-              /></a>
-            </div>
+          <div class="desc text-start">
+            <p
+              v-for="(desc, i) in project.description"
+              :key="i"
+              v-html="desc"
+            ></p>
           </div>
-          <p class="project_subtitle">Web Project</p>
-          <p class="desc text-start">
-            An online learning platform where course creators can organize their
-            content. (A <span class="devspan">Udemy</span> clone with a few
-            touches)
-          </p>
           <ul class="tools d-flex devspan justify-content-evenly ">
-            <li>Vue</li>
-            <li>Laravel</li>
-            <li>Inertia</li>
-            <li>Tailwind</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5 mt-lg-0">
-      <div class="row">
-        <div
-          data-aos="fade-right"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          class="img-container p-0 col-lg-6"
-        >
-          <img class="w-100 h-100" src="../assets/Inspect.png" alt="" />
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="10"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          class="text col-lg-6 text-center text-lg-end mt-4 my-lg-auto"
-        >
-          <div class="d-flex justify-content-center justify-content-lg-end">
-            <p class="project_title me-2">Inspect</p>
-            <div class="icons align-self-center">
-              <a target="_blank" href="https://github.com/khaledtag98/Inspect/"
-                ><fa class="icon" :icon="['fab', 'github']"
-              /></a>
-            </div>
-          </div>
-
-          <p class="project_subtitle">Web Project</p>
-
-          <p class="desc text-start">
-            This website is a user-friendly platform where the companies can
-            display their residential or commercial properties.
-          </p>
-          <ul class="tools d-flex devspan justify-content-evenly ">
-            <li>Laravel</li>
-            <li>SQL</li>
-            <li>Tailwind</li>
-            <li>Javascript</li>
+            <li v-for="(tool, index) in project.tools" :key="index + 'v'">
+              {{ tool }}
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+import projects from "../data/projects.json";
+export default {
+  data() {
+    return {
+      projects,
+    };
+  },
+};
+</script>
 <style scoped>
 .projects {
   margin-top: 15%;
@@ -194,7 +119,7 @@
   opacity: 0.25;
   transition: 0.5s;
   border: 1px solid transparent;
-  transition:0.3s;
+  transition: 0.3s;
   border-radius: 10px;
 }
 .img-container:hover img {

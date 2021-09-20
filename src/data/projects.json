@@ -1,0 +1,35 @@
+[
+    {
+        "id":0,
+        "image": "Hagarts.png",
+        "title": "Hagarts",
+        "subtitle": "Featured Project",
+        "description": ["A portfolio website built for an artist to display and sell her work to her clients professionaly.", 
+                      "The admin is provided a fully functional admin panel to organize the content of the website."],
+        "tools": ["Vue", "Gridsome", "CMS", "Netlify", "Graphql", "Tailwind"],
+        "icon": "external-link-alt",
+        "href": "https://hagarts.netlify.app"
+      },
+      {
+        "id":1,
+        "image": "Edufy.png",
+        "title": "Edufy",
+        "subtitle": "Featured Project",
+        "description": ["An online learning platform where course creators can organize their content. (A <span class='devspan'>Udemy</span> clone with a few touches)"],
+        "tools": ["Vue", "Laravel", "Inertia", "Tailwind", "SQL"],
+        "icon": ["fab", "github"],
+        "href": "https://www.github.com/khaledtag98/edufy"
+      },
+      {
+        "id":2,
+        "image": "Inspect.png",
+        "title": "Inspect",
+        "subtitle": "Featured Project",
+        "description": [
+            "This website is a user-friendly platform where the companies can display their residential or commercial properties."],
+        "tools": [ "Laravel","Javascript", "Tailwind","SQL"],
+        "icon": ["fab", "github"],
+        "href": "https://www.github.com/khaledtag98/inspect"
+      }
+
+]

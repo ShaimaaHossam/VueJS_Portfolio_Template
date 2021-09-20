@@ -1,10 +1,14 @@
 <template>
-  <div data-aos="zoom-in-down"
+  <div
+    data-aos="zoom-in-down"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="true"
-    data-aos-anchor-placement="top-center" id="about" class="mx-0 ms-lg-5 hero about">
+    data-aos-anchor-placement="top-center"
+    id="about"
+    class="mx-0 ms-lg-5 hero about"
+  >
     <div
       class="d-flex justify-content-between align-content-center flex-column"
     >
@@ -17,24 +21,17 @@
           <div class="row">
             <div class="col-lg-7">
               <div class="about_par">
-                <p>
-                  <span class="devspan fw-bold">Shaimaa Hossam</span><br>
-                  A computer engineering undergraduate with fundamental knowledge of software design and development.<br><br> 
-                   Likes to code things from scratch and turn ideas into real life digital experiences while maintaining a simple, clean, and organized content structure.
-                </p>  Passionate about self-development and always looking for the next thing to learn.<br>
-                <br />
+                <p class="devspan fw-bold">Shaimaa Hossam</p>
+                <p v-for="(par, index) in info.about" :key="index">{{ par }}</p>
+
                 <p class="text-white fw-bold">Interests</p>
-                <div class=" d-flex">
-                  <fa class="icon me-2 mb-0" :icon="['far', 'star']" />
-                  <p>Full-stack software development</p>
-                </div>
-                <div class="d-flex mt-0 mb-0">
-                  <fa class="icon me-2" :icon="['far', 'star']" />
-                  <p>Artificial Intelligence</p>
-                </div>
-                <div class="d-flex">
-                  <fa class="icon me-2" :icon="['far', 'star']" />
-                  <p>Research</p>
+                <div
+                  v-for="(interest, i) in info.interests"
+                  :key="i + 'c'"
+                  class=" d-flex"
+                >
+                  <fa class="mb-0 icon me-2" :icon="['far', 'star']" />
+                  <p>{{ interest }}</p>
                 </div>
               </div>
             </div>
@@ -47,6 +44,16 @@
     </div>
   </div>
 </template>
+<script>
+import info from '../data/about.json'
+export default {
+  data() {
+    return {
+      info
+    };
+  },
+};
+</script>
 <style scoped>
 .about {
   padding: 13%;
@@ -61,29 +68,28 @@
   width: 50px;
 }
 
-
 .about_par {
   color: rgb(153, 174, 199);
   font-size: 1.13rem;
 }
 .icon {
   color: rgb(32, 157, 206);
-  font-size:18px;
+  font-size: 18px;
 }
-div img{
+div img {
   object-fit: cover;
   opacity: 0.7;
-  border:1px solid transparent;
+  border: 1px solid transparent;
   border-radius: 20px;
 }
-div img:hover{
-  opacity:1;
+div img:hover {
+  opacity: 1;
   transition: 0.3s;
 }
-.img_container{
+.img_container {
   background: rgb(13, 8, 29);
-  padding:0;
-  border:1px solid transparent;
+  padding: 0;
+  border: 1px solid transparent;
   border-radius: 20px;
 }
 </style>

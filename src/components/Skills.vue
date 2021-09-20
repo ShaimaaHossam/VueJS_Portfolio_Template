@@ -1,24 +1,30 @@
 <template>
   <div id="skills" class="skills ms-lg-5">
-    <div data-aos="zoom-in-down"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center" class="head mx-auto ms-5">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-mirror="true"
+      data-aos-once="true"
+      data-aos-anchor-placement="top-center"
+      class="mx-auto head ms-5"
+    >
       <p class="header text-start">My Skills</p>
       <div class="hline"></div>
     </div>
 
     <div class="container ms-lg-5">
       <div class="row">
-        <div data-aos="fade-right"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center" class="col-lg-3">
-          <ul class="category d-flex ps-0 d-lg-block overflow-auto">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="col-lg-3"
+        >
+          <ul class="overflow-auto category d-flex ps-0 d-lg-block">
             <li :class="menu == 0 ? 'selected' : 'not'" @click="setMenu(0)">
               Front End Development
             </li>
@@ -33,106 +39,35 @@
             </li>
           </ul>
         </div>
-        <div data-aos="fade-left"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center" class="skill_container my-auto mx-auto col-lg-6">
-          <div v-if="menu === 0">
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Programming Languages</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Javascript</p>
-              <p class="devspan item">Typescript</p>
-              <p class="devspan item">HTML</p>
-              <p class="devspan item">CSS</p>
-            </div>
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Frameworks & Libraries</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Vue</p>
-              <p class="devspan item">Vuex</p>
-              <p class="devspan item">React</p>
-              <p class="devspan item">Redux</p>
-              <p class="devspan item">Bootstrap</p>
-              <p class="devspan item">Tailwind</p>
-            </div>
-          </div>
-          <div v-if="menu === 1">
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Programming Languages</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">PHP</p>
-              <p class="devspan item">Python</p>
-              <p class="devspan item">Ruby</p>
-            </div>
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Database Management</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">SQL</p>
-              <p class="devspan item">MongoDB</p>
-            </div>
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Frameworks & Libraries</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Laravel</p>
-              <p class="devspan item">Nodejs</p>
-            </div>
-          </div>
-          <div v-if="menu === 2">
-            <div
-              class="d-flex justify-content-between flex-wrap align-content-center"
+        <div
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          class="mx-auto my-auto skill_container col-lg-6"
+        >
+          <div
+              v-for="(category, index) in skills[menu].categories"
+              :key="index"
             >
-              <p class="devspan item">C</p>
-              <p class="devspan item">C++</p>
-              <p class="devspan item">C#</p>
-              <p class="devspan item">Java</p>
-              <p class="devspan item">OOP</p>
-              <p class="devspan item">Data Structures</p>
-              <p class="devspan item">Javascript</p>
-              <p class="devspan item">Python</p>
-              <p class="devspan item">Ruby</p>
+              <div class="mt-2 d-flex">
+                <fa icon="caret-right" class="mt-1 devspan me-1" />
+                <p class="text-start fw-bold skill">{{ category.title }}</p>
+              </div>
+              <div class="flex-wrap d-flex justify-content-between">
+                <p v-for="(skill, i) in category.skills" :key="i+'x'" class="devspan item">{{skill}}</p>
+              </div>
             </div>
-          </div>
-          <div v-if="menu === 3">
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Tools & Platforms</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Git</p>
-              <p class="devspan item">Netlify</p>
-              <p class="devspan item">Heroku</p>
-            </div>
-            <div class="d-flex mt-2">
-              <fa icon="caret-right" class="devspan mt-1 me-1" />
-              <p class="text-start fw-bold skill">Design</p>
-            </div>
-            <div class="d-flex justify-content-between flex-wrap">
-              <p class="devspan item">Adobe XD</p>
-              <p class="devspan item">Figma</p>
-              <p class="devspan item">Photoshop</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-.head{
-    margin-bottom:70px;
+.head {
+  margin-bottom: 70px;
 }
 .skills {
   margin-top: 15%;
@@ -175,12 +110,11 @@
 }
 @media only screen and (max-width: 991px) {
   .skills {
-
-    padding:0;
+    padding: 0;
     margin: 15% 0 0 0;
   }
-  .skill_container{
-      padding: 13%;
+  .skill_container {
+    padding: 13%;
   }
   .category {
     box-shadow: 2px 2px 40px rgb(4, 20, 36);
@@ -212,10 +146,12 @@
 }
 </style>
 <script>
+import skills from "../data/skills.json";
 export default {
   data() {
     return {
       menu: 0,
+      skills,
     };
   },
   methods: {

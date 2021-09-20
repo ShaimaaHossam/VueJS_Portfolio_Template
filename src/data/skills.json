@@ -1,0 +1,95 @@
+[
+    {
+        "categories": [
+            {
+                "title": "Languages",
+                "skills": [
+                    "Javascript",
+                    "jQuery",
+                    "Typescript",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            {
+                "title": "Frameworks & Libraries",
+                "skills": [
+                    "Vue",
+                    "React",
+                    "Bootstrap",
+                    "Tailwind"
+                ]
+            }
+        ]
+    },
+    {
+        "categories": [
+            {
+                "title": "Languages",
+                "skills": [
+                    "PHP",
+                    "Python",
+                    "Ruby"
+                ]
+            },
+            {
+                "title": "Database Management",
+                "skills": [
+                    "SQL",
+                    "MongoDB"
+                ]
+            },
+            {
+                "title": "Frameworks & Libraries",
+                "skills": [
+                    "Laravel",
+                    "Nodejs",
+                    "Expressjs"
+                ]
+            }
+        ]
+    },
+    {
+        "categories": [
+            {
+                "title": "Languages",
+                "skills": [
+                    "C",
+                    "C++",
+                    "C#",
+                    "Java",
+                    "Javascript",
+                    "Python",
+                    "Ruby"
+                ]
+            }
+        ]
+    },
+    {
+        "categories": [
+            {
+                "title": "Patterns & Practices",
+                "skills": [
+                    "OOP",
+                    "Data Structures"
+                ]
+            },
+            {
+                "title": "Tools & Platforms",
+                "skills": [
+                    "Git",
+                    "Netlify",
+                    "Heroku"
+                ]
+            },
+            {
+                "title": "Design",
+                "skills": [
+                    "Photoshop",
+                    "Adobe XD",
+                    "Figma"
+                ]
+            }
+        ]
+    }
+]
