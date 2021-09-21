@@ -93,12 +93,12 @@
   cursor: pointer;
 }
 .selected {
-  border-left: 2px solid rgb(32, 157, 206);
-  background-color: rgb(17, 33, 54);
+  border-left: 3px solid rgb(32, 157, 206);
+  background-color: rgb(24, 47, 78);
   color: rgb(32, 157, 206);
 }
 .not {
-  border-left: 1px solid rgb(153, 174, 199);
+  border-left: 2px solid rgb(153, 174, 199);
   color: rgb(153, 174, 199);
   background-color: rgb(9, 29, 59);
 }
