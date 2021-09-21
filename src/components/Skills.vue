@@ -88,7 +88,7 @@
   transition: 0.5s;
 }
 .category li:hover {
-  background-color: rgb(17, 33, 54);
+  background-color: rgb(24, 47, 78);
   color: rgb(32, 157, 206);
   cursor: pointer;
 }
