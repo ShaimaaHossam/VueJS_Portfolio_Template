@@ -35,7 +35,7 @@
           data-aos-once="true"
           data-aos-anchor-placement="top-center"
           class="p-0 img-container col-lg-6"
-          :class="index % 2 == 0 ? 'order-2' : ''"
+          :class="index % 2 == 0 ? 'order-lg-2' : ''"
         >
           <img
             class="w-100 h-100"

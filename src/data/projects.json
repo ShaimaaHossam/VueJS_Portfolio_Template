@@ -18,10 +18,21 @@
         "description": ["An online learning platform where course creators can organize their content. (A <span class='devspan'>Udemy</span> clone with a few touches)"],
         "tools": ["Vue", "Laravel", "Inertia", "Tailwind", "SQL"],
         "icon": ["fab", "github"],
-        "href": "https://www.github.com/khaledtag98/edufy"
+        "href": "https://github.com/ShaimaaHossam/edufy"
       },
       {
         "id":2,
+        "image": "Inspect.png",
+        "title": "Inspect",
+        "subtitle": "Featured Project",
+        "description": [
+            "This website is a user-friendly platform where the companies can display their residential or commercial properties."],
+        "tools": [ "Laravel","Javascript", "Tailwind","SQL"],
+        "icon": ["fab", "github"],
+        "href": "https://www.github.com/khaledtag98/inspect"
+      },
+      {
+        "id":3,
         "image": "Inspect.png",
         "title": "Inspect",
         "subtitle": "Featured Project",
