@@ -30,17 +30,7 @@
         "tools": [ "Laravel","Javascript", "Tailwind","SQL"],
         "icon": ["fab", "github"],
         "href": "https://www.github.com/khaledtag98/inspect"
-      },
-      {
-        "id":3,
-        "image": "Inspect.png",
-        "title": "Inspect",
-        "subtitle": "Featured Project",
-        "description": [
-            "This website is a user-friendly platform where the companies can display their residential or commercial properties."],
-        "tools": [ "Laravel","Javascript", "Tailwind","SQL"],
-        "icon": ["fab", "github"],
-        "href": "https://www.github.com/khaledtag98/inspect"
       }
+      
 
 ]
